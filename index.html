@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form action="https://sheetdb.io/api/v1/483j5hf9yq29t" method="post" id="sheetdb-form">
+            <div>
+                <lable for="fname">First Name:</lable>
+                <input type="text" id="fname" name="data[FirstName]" placeholder="Your first name" required>
+            </div>
+
+            <div>
+                <lable for="lname">Last Name:</lable>
+                <input type="text" id="lname" name="data[LastName]" placeholder="Your last name" required>
+            </div>
+
+            <input type="submit" value="Save">
+        </form>
+    </div>
+
+    <div class="fetch-container">
+      <div class="fetch-section">
+        <lable for="fname">First Name:</lable>
+        <input type="text" id="fname" name="data[FirstName]" placeholder="Your first name" required>
+       </div>
+      <p>Lastname: <span id="output"></span></p>
+       <button class="fetch-btn" id="fetchDataBtn">Fetch</button>
+    </div>
+ 
+    <script src="myscript.js"></script>
+</body>
+</html>
